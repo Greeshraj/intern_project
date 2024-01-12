@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Quicksand&family=Ubuntu&display=swap');
+
+
+
+.main{
+    flex-direction: column;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 5rem;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    background: linear-gradient(180deg, #070305, transparent, transparent);
+    /* background-color: #300636; */
+}
+
+
+.heading{
+    font-size: 4rem;
+    padding-left: 1rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    font-family: Ubuntu;
+    color: #FFFFFF;
+    text-shadow: 0 0 4rem #000000;
+}
+
+.box{
+    /* background-color: #300736; */
+    color: #fff;
+    box-sizing: border-box;
+    padding: 4rem 6rem;
+    min-height: 100%;
+    max-width: 75%;
+    border-image: linear-gradient(135deg, #f701b2, #01a7fe) 30;
+    border-width: 0.6rem;
+    border-style: solid;
+    box-shadow: -1rem -0.5rem 2rem #f701b244,
+                1rem 0.5rem 2rem #01a7fe44,
+                inset 1rem 0.5rem 2rem #f701b244,
+                inset -1rem -0.5rem 2rem #01a7fe44;
+}
+  
+p{
+    font-family: oxygen;
+    font-size: 1.8rem;
+    text-align: justify;
+    font-weight: 500;
+}

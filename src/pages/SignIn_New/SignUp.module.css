@@ -1,0 +1,220 @@
+.formArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(44, 3, 51);
+  /* background-image: linear-gradient(to bottom, rgb(52, 4, 62), #2c073f); */
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  position: fixed;
+  z-index: -1;
+}
+
+.form > * {
+  margin: 1rem 0;
+}
+
+h2 {
+  color: #fff;
+  text-align: center !important;
+  text-shadow: 0px 0px 29.994037628173828px #000,
+    0px 0px 59.988075256347656px #000, 0px 0px 209.95826721191406px #000,
+    0px 0px 419.9165344238281px #000, 0px 0px 719.8568725585938px #000,
+    0px 0px 1259.7496337890625px #000;
+  font-family: Ubuntu;
+  font-size: 6.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.375rem;
+}
+
+.form__formDiv {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-image: url("https://i.postimg.cc/DzQHS69S/homepage-bgimg.png");
+  /* padding: 0.25rem; */
+  background-size: cover;
+  background-position: center;
+  width: 60vw;
+  height: 70vh;
+  flex-shrink: 0;
+  border-radius: 1rem;
+}
+
+.form__formDiv::before,
+.form__formDiv::after {
+  content: "";
+  position: absolute;
+  inset: -0.6rem;
+  z-index: -1;
+  background: linear-gradient(135deg, #bb377d, rgba(61, 158, 250));
+  border-radius: inherit;
+}
+
+.form__formDiv::after {
+  filter: blur(3rem);
+}
+
+.form__formarea {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  /* border-radius: 2rem; */
+  background-color: #0006;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.form__group > * {
+  width: 100%;
+}
+
+.form__input {
+  width: 100%;
+  height: 3rem;
+  margin: 1rem 0;
+  flex-shrink: 0;
+  border-radius: 0.72731rem;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+.form__input:focus {
+  transform: scale(1.05) translateY(-0.1rem);
+  outline-color: #f542d1;
+  border: none;
+}
+
+.form__input:focus:invalid {
+  outline-color: orange;
+  outline-style: groove;
+}
+.form__input:placeholder-shown ~ .form__label {
+  opacity: 0;
+}
+.form__label {
+  color: #fff;
+  text-align: left;
+  font-family: Montserrat;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  font-variant: small-caps;
+  height: 2.5rem;
+  flex-shrink: 0;
+}
+.form__redirect {
+  color: #fbfcfe;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-variant: small-caps;
+ padding: .8rem 0;
+}
+.form__button {
+  color: #fff;
+  cursor: pointer;
+  background-image: linear-gradient(to bottom, #ff00cc, #333399);
+  font-family: Montserrat;
+  height: 40px;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.form__button:hover {
+  background-image: linear-gradient(135deg, #ff00cc, #333399);
+}
+.form__redirect span {
+  color: #faf4f8;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-variant: small-caps;
+}
+.signup__name1div {
+  margin: 0 0.5rem;
+  text-align: left;
+  width: 100%;
+}
+.signup__name2div {
+  margin: 0 0.5rem;
+  text-align: left;
+  width: 100%;
+}
+.signup__flexer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.signup__selector {
+  position: sticky;
+  width: 100%;
+  height: 3rem;
+  margin: 0.1rem 0;
+  border-radius: 0.72731rem;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+@media screen and (max-width: 78em) {
+  .form__formDiv {
+    width: 75vw;
+  }
+}
+@media screen and (max-width: 62.5em) {
+  .form__formDiv {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 43.75em) {
+  .form__formarea {
+    width: 100%;
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .signup__flexer {
+    flex-direction: column;
+  }
+  .form__button {
+    height: 48px;
+    padding: 1rem 0;
+  }
+  .form__formarea {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .form__formDiv {
+      height: 78vh;
+    }
+  }
+
+@media screen and (max-width: 31.25em) {
+  .form__formarea {
+    padding: 2rem;
+  }
+}

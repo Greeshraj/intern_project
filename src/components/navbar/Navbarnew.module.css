@@ -1,0 +1,158 @@
+
+.logo span {
+  font-family: Mplus-bold;
+}
+
+html {
+  font-size: 63.4%;
+}
+
+.main_nav {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
+  background: transparent;
+  background-color: #26040f88;
+  backdrop-filter: blur(4px);
+
+  position: fixed;
+  top: 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  font-size: 3.4rem;
+  font-weight: 520;
+  margin-left: 1rem;
+  width: 10%;
+  color: white;
+}
+.logo img {
+  height: 6.9rem;
+  width: 6.9rem;
+}
+
+.menu_link {
+  width: 70%;
+  margin-left: 0rem;
+  padding-top: 2.4rem;
+  transition: all 1s ease;
+}
+
+.menu_link ul {
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(75, 15, 76);
+  font-weight: 400;
+  font-size: 3.4rem;
+  /* width: 80%; */
+}
+.menu_link .login {
+  height: 3.5rem;
+  width: 8rem;
+  color: white;
+  background-color: #3e094e;
+  font-size: 2rem;
+  border-radius: 0.8rem;
+  font-weight: 500;
+  padding: 0.3rem;
+  padding-bottom: 0.5rem;
+  border: none;
+}
+.menu_link .sign {
+  height: 3.5rem;
+  min-width: 9rem;
+  /* background-color: #ffffff; */
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border-radius: 1rem;
+  color: white;
+
+  /* new */
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  font-weight: 500;
+  border: 1px solid rgb(54, 7, 63);
+
+  font-weight: 500;
+  padding-bottom: 0.2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+.menu_link .logoutdevice {
+  height: 3.5rem;
+  min-width: 9rem;
+  background-color: #401052;
+  color: yellow;
+  font-size: 2rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  font-weight: 500;
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  padding-bottom: 0.2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+.sign {
+  margin-right: 0.7rem;
+  background: linear-gradient(0deg, #8514b8, #cc0388);
+  box-shadow: 0 0 4rem #000000, 0 0.1rem 0.5rem #00000044;
+}
+.logoutdevice {
+  margin-right: 0rem;
+  background-color: #3d1254;
+}
+.menu_link ul li {
+  display: flex;
+  font-size: 2rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.2em;
+}
+
+.menu_link ul li a {
+  text-transform: capitalize;
+  color: white;
+  transition: 0.5s;
+}
+.menu_link ul li a:hover {
+  transform-origin: left;
+  /* text-decoration:  ; */
+  transition: 0.5s;
+}
+.sign:hover {
+  box-shadow: 0 0 2rem #000000, 0 0.2rem 2rem 0.25rem #000000dd;
+}
+.logoutdevice:hover {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  content: " Logout";
+}
+.login:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+ 
+
+.hamburger_menu {
+  display: none;
+  user-select: none;
+  background: transparent;
+  background-color: #26040f88;
+  backdrop-filter: blur(4px);
+}
